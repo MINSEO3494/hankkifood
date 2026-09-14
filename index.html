@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>더바른한끼 | 한끼식품</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,17 +21,22 @@
     <header>
 
         <!-- 로고 클릭 시 메인 홈페이지로 이동 -->
-        <a href="index.html" class="logo">
-            더바른한끼
-        </a>
-
+     <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="더바른한끼 소문난찐빵&손만두">
+</a>
 
         <!-- 모든 페이지와 동일한 메뉴 -->
         <nav>
+            <div class="dropdown">
+    <a href="brand.html">
+        브랜드 소개
+    </a>
 
-            <a href="brand.html">
-                브랜드 소개
-            </a>
+    <div class="dropdown-menu">
+        <a href="brand.html">브랜드 개요</a>
+        <a href="history.html">걸어온 길</a>
+    </div>
+</div>
 
             <a href="products.html">
                 제품 소개
@@ -39,10 +44,6 @@
 
             <a href="company.html">
                 한끼식품
-            </a>
-
-            <a href="history.html">
-                걸어온 길
             </a>
 
             <a href="contact.html">
@@ -57,7 +58,6 @@
     <!-- =========================
          메인 화면
     ========================== -->
-
     <section class="hero">
 
         <div class="hero-text">
@@ -85,25 +85,41 @@
 
         </div>
 
+<div class="hero-image">
 
-        <div class="hero-image">
+    <div class="hero-slider">
+<div class="hero-controls">
 
-            <div class="image-placeholder">
+    <button class="hero-prev">‹</button>
 
-                <span>
-                    MAIN IMAGE
-                </span>
+    <span class="hero-count">
+        <strong>01</strong> / 03
+    </span>
 
-                <small>
-                    대표 제품 사진이 들어갈 자리
-                </small>
+    <button class="hero-next">›</button>
 
-            </div>
-
+</div>
+        <div class="hero-slide active">
+            <img src="images/main1.jpg" alt="더바른한끼">
         </div>
 
-    </section>
+        <div class="hero-slide">
+            <img src="images/main2.jpg" alt="더바른한끼">
+        </div>
 
+        <div class="hero-slide">
+            <img src="images/main3.jpg" alt="더바른한끼">
+        </div>
+
+    </div>
+
+</div>
+
+    </section>
+<div class="hero-scroll">
+    <span>SCROLL TO EXPLORE</span>
+    <div class="scroll-line"></div>
+</div>
 
     <!-- =========================
          핵심 가치
@@ -117,7 +133,6 @@
             <div class="value-icon">
                 🌱
             </div>
-
             <h3>
                 좋은 재료
             </h3>
@@ -226,8 +241,8 @@
             <div class="product-card">
 
                 <div class="product-image">
-                    제품 이미지
-                </div>
+    <img src="images/찐빵사진파일명.jpg" alt="발효 왕찐빵">
+</div>
 
                 <h3>
                     발효 왕찐빵
@@ -243,8 +258,8 @@
             <div class="product-card">
 
                 <div class="product-image">
-                    제품 이미지
-                </div>
+    <img src="images/수제 고기 왕만두.jpg" alt="수제 고기 왕만두">
+</div>
 
                 <h3>
                     수제 고기 왕만두
@@ -260,8 +275,8 @@
             <div class="product-card">
 
                 <div class="product-image">
-                    제품 이미지
-                </div>
+    <img src="images/숯불 갈비만두.jpg" alt="숯불 갈비만두">
+</div>
 
                 <h3>
                     숯불 갈비만두
@@ -277,8 +292,8 @@
             <div class="product-card">
 
                 <div class="product-image">
-                    제품 이미지
-                </div>
+    <img src="images/호떡쌀 군만두.jpg" alt="호떡쌀 군만두">
+</div>
 
                 <h3>
                     호떡쌀 군만두
@@ -294,15 +309,15 @@
             <div class="product-card">
 
                 <div class="product-image">
-                    제품 이미지
-                </div>
+    <img src="images/더바른 한끼.jpg" alt="더바른한끼">
+</div>
 
                 <h3>
-                    더바른한끼
+                    납작이 군만두
                 </h3>
 
                 <p>
-                    다양한 한끼 제품
+                    한입에 쏙 납작이 군만두
                 </p>
 
             </div>
@@ -372,7 +387,44 @@
 
     </section>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
 
+    const slides = document.querySelectorAll('.hero-slide');
+    const prevButton = document.querySelector('.hero-prev');
+    const nextButton = document.querySelector('.hero-next');
+    const currentNumber = document.querySelector('.hero-count strong');
+
+    if (slides.length < 2) return;
+
+    let currentSlide = 0;
+
+    function showSlide(index) {
+
+        slides[currentSlide].classList.remove('active');
+
+        currentSlide = (index + slides.length) % slides.length;
+
+        slides[currentSlide].classList.add('active');
+
+        currentNumber.textContent =
+            String(currentSlide + 1).padStart(2, '0');
+    }
+
+    nextButton.addEventListener('click', function () {
+        showSlide(currentSlide + 1);
+    });
+
+    prevButton.addEventListener('click', function () {
+        showSlide(currentSlide - 1);
+    });
+
+    setInterval(function () {
+        showSlide(currentSlide + 1);
+    }, 4000);
+
+});
+</script>
 </body>
 
 </html>
