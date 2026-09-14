@@ -1253,3 +1253,35 @@ header {
 nav a {
     white-space: nowrap;
 }
+/* =========================
+   HERO IMAGE SIZE FIX
+========================= */
+
+.hero-image {
+    width: 52%;
+    height: 500px !important;
+    max-width: 720px;
+    aspect-ratio: auto !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
