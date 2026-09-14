@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>한끼식품 | 회사 소개</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================
+           회사 소개 페이지 전용
+        ========================== */
+
+        .company-page {
+            background-color: #f8f6f0;
+        }
+
+        .company-hero {
+            min-height: 520px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 70px;
+
+            padding: 90px 10%;
+
+            background-color: #e9e4d8;
+        }
+
+        .company-hero-text {
+            flex: 1;
+        }
+
+        .company-hero-text h1 {
+            font-size: 46px;
+            line-height: 1.4;
+
+            color: #31513b;
+
+            margin-bottom: 25px;
+        }
+
+        .company-hero-text p {
+            font-size: 16px;
+            line-height: 1.9;
+
+            color: #666;
+        }
+
+        .company-hero-image {
+            flex: 0 0 48%;
+        }
+
+        .company-hero-image .image-placeholder {
+            aspect-ratio: 4 / 3;
+
+            background-color: #d8d2c3;
+        }
+
+
+        /* =========================
+           회사 소개
+        ========================== */
+
+        .company-intro {
+            display: flex;
+            align-items: center;
+
+            gap: 80px;
+
+            padding: 110px 10%;
+
+            background-color: #fff;
+        }
+
+        .company-intro-image {
+            flex: 0 0 45%;
+        }
+
+        .company-intro-image .image-placeholder {
+            aspect-ratio: 4 / 3;
+
+            background-color: #e9e4d8;
+
+            border-radius: 16px;
+        }
+
+        .company-intro-text {
+            flex: 1;
+        }
+
+        .company-intro-text h2 {
+            font-size: 36px;
+            line-height: 1.5;
+
+            color: #31513b;
+
+            margin-bottom: 25px;
+        }
+
+        .company-intro-text p:not(.section-label) {
+            font-size: 15px;
+            line-height: 2;
+
+            color: #666;
+
+            margin-bottom: 15px;
+        }
+
+
+        /* =========================
+           제조 시스템
+        ========================== */
+
+        .company-system {
+            padding: 110px 8%;
+
+            background-color: #f8f6f0;
+        }
+
+        .company-system-header {
+            text-align: center;
+
+            max-width: 700px;
+
+            margin: 0 auto 60px;
+        }
+
+        .company-system-header h2 {
+            font-size: 36px;
+
+            color: #31513b;
+
+            margin-bottom: 20px;
+        }
+
+        .company-system-header p {
+            font-size: 14px;
+            line-height: 1.9;
+
+            color: #777;
+        }
+
+        .system-grid {
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .system-card {
+            padding: 40px 30px;
+
+            text-align: center;
+
+            background-color: #fff;
+
+            border-radius: 10px;
+        }
+
+        .system-card .system-number {
+            display: block;
+
+            font-size: 12px;
+            letter-spacing: 2px;
+
+            color: #8b6f47;
+
+            margin-bottom: 15px;
+        }
+
+        .system-card h3 {
+            font-size: 20px;
+
+            margin-bottom: 15px;
+        }
+
+        .system-card p {
+            font-size: 13px;
+            line-height: 1.8;
+
+            color: #777;
+        }
+
+
+        /* =========================
+           회사 비전
+        ========================== */
+
+        .company-vision {
+            padding: 110px 10%;
+
+            text-align: center;
+
+            background-color: #31513b;
+
+            color: #fff;
+        }
+
+        .company-vision .section-label {
+            color: #d8d2c3;
+        }
+
+        .company-vision h2 {
+            font-size: 38px;
+            line-height: 1.5;
+
+            margin-bottom: 25px;
+        }
+
+        .company-vision p {
+            max-width: 700px;
+
+            margin: 0 auto;
+
+            font-size: 15px;
+            line-height: 2;
+
+            color: #e5e5e5;
+        }
+
+
+        /* =========================
+           모바일
+        ========================== */
+
+        @media (max-width: 768px) {
+
+            .company-hero {
+                flex-direction: column;
+
+                padding: 70px 7%;
+
+                text-align: center;
+            }
+
+            .company-hero-text h1 {
+                font-size: 36px;
+            }
+
+            .company-hero-image {
+                width: 100%;
+            }
+
+            .company-intro {
+                flex-direction: column;
+
+                padding: 70px 7%;
+
+                gap: 45px;
+            }
+
+            .company-intro-image {
+                width: 100%;
+            }
+
+            .company-intro-text h2 {
+                font-size: 30px;
+            }
+
+            .company-system {
+                padding: 70px 7%;
+            }
+
+            .system-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .company-vision {
+                padding: 80px 7%;
+            }
+
+            .company-vision h2 {
+                font-size: 30px;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <a href="index.html" class="logo">
+        더바른한끼
+        </a>
+
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="brand.html">브랜드 소개</a>
+            <a href="products.html">제품 소개</a>
+            <a href="company.html">한끼식품</a>
+            <a href="history.html">걸어온 길</a>
+            <a href="contact.html">문의하기</a>
+        </nav>
+
+    </header>
+
+
+    <main class="company-page">
+
+
+        <!-- =========================
+             회사 메인
+        ========================== -->
+
+        <section class="company-hero">
+
+            <div class="company-hero-text">
+
+                <p class="section-label">
+                    HANKKI FNB
+                </p>
+
+                <h1>
+                    사람과 식탁을 생각하는<br>
+                    한끼식품
+                </h1>
+
+                <p>
+                    오랜 시간 식품을 만들어온 경험을 바탕으로
+                    좋은 제품을 생산하고 있습니다.
+                </p>
+
+            </div>
+
+
+            <div class="company-hero-image">
+
+                <div class="image-placeholder">
+
+                    <span>COMPANY IMAGE</span>
+
+                    <small>
+                        공장 또는 회사 대표 사진
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             회사 소개
+        ========================== -->
+
+        <section class="company-intro">
+
+            <div class="company-intro-image">
+
+                <div class="image-placeholder">
+
+                    <span>FACTORY</span>
+
+                    <small>
+                        생산시설 사진
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="company-intro-text">
+
+                <p class="section-label">
+                    ABOUT HANKKI FNB
+                </p>
+
+                <h2>
+                    오랜 경험을 바탕으로<br>
+                    더 나은 제품을 만듭니다.
+                </h2>
+
+                <p>
+                    한끼식품은 찐빵과 만두를 비롯한
+                    다양한 식품을 직접 생산하며
+                    고객에게 제품을 전달하고 있습니다.
+                </p>
+
+                <p>
+                    오랜 시간 축적해온 제조 경험과
+                    생산 노하우를 바탕으로
+                    제품의 맛과 품질을 위해
+                    꾸준히 노력하고 있습니다.
+                </p>
+
+                <p>
+                    앞으로도 고객이 믿고 선택할 수 있는
+                    식품을 만들기 위해 노력하겠습니다.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             제조 시스템
+        ========================== -->
+
+        <section class="company-system">
+
+            <div class="company-system-header">
+
+                <p class="section-label">
+                    PRODUCTION SYSTEM
+                </p>
+
+                <h2>
+                    체계적인 생산 시스템
+                </h2>
+
+                <p>
+                    좋은 제품을 만들기 위해
+                    생산부터 품질관리까지
+                    체계적으로 관리합니다.
+                </p>
+
+            </div>
+
+
+            <div class="system-grid">
+
+
+                <div class="system-card">
+
+                    <span class="system-number">
+                        STEP 01
+                    </span>
+
+                    <h3>
+                        원재료 관리
+                    </h3>
+
+                    <p>
+                        제품의 기본이 되는 원재료를
+                        꼼꼼하게 관리하고
+                        제품 생산에 사용합니다.
+                    </p>
+
+                </div>
+
+
+                <div class="system-card">
+
+                    <span class="system-number">
+                        STEP 02
+                    </span>
+
+                    <h3>
+                        직접 생산
+                    </h3>
+
+                    <p>
+                        자체 생산시설과 오랜 경험을
+                        바탕으로 제품을 직접 생산합니다.
+                    </p>
+
+                </div>
+
+
+                <div class="system-card">
+
+                    <span class="system-number">
+                        STEP 03
+                    </span>
+
+                    <h3>
+                        품질 관리
+                    </h3>
+
+                    <p>
+                        제품의 품질을 꾸준하게 관리하며
+                        고객에게 좋은 제품을 전달합니다.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             회사 비전
+        ========================== -->
+
+        <section class="company-vision">
+
+            <p class="section-label">
+                OUR VISION
+            </p>
+
+            <h2>
+                더 좋은 한끼를 위해<br>
+                계속 나아가겠습니다.
+            </h2>
+
+            <p>
+                한끼식품은 지금까지 쌓아온 경험에
+                머무르지 않고 지속적인 연구와
+                품질 향상을 통해 더 좋은 식품을
+                만들어가겠습니다.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>

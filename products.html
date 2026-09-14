@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>제품 소개 | 더바른한끼</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================
+           제품 페이지 전용
+        ========================== */
+
+        .products-page {
+            padding: 100px 8%;
+            background-color: #f8f6f0;
+        }
+
+        .products-header {
+            max-width: 700px;
+            margin: 0 auto 70px;
+            text-align: center;
+        }
+
+        .products-header .section-label {
+            margin-bottom: 18px;
+        }
+
+        .products-header h1 {
+            font-size: 42px;
+            line-height: 1.4;
+            color: #31513b;
+            margin-bottom: 22px;
+        }
+
+        .products-header p {
+            font-size: 15px;
+            line-height: 1.9;
+            color: #777;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.25s;
+        }
+
+        .product-item:hover {
+            transform: translateY(-7px);
+        }
+
+        .product-item-image {
+            width: 100%;
+            height: 280px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: #eeeae1;
+        }
+
+        .product-item-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .product-item-content {
+            padding: 28px 25px 32px;
+        }
+
+        .product-number {
+            display: block;
+
+            font-size: 11px;
+            letter-spacing: 2px;
+
+            color: #8b6f47;
+
+            margin-bottom: 10px;
+        }
+
+        .product-item h2 {
+            font-size: 21px;
+            color: #333;
+
+            margin-bottom: 15px;
+        }
+
+        .product-item p {
+            font-size: 14px;
+            line-height: 1.8;
+
+            color: #777;
+        }
+
+        .products-bottom {
+            max-width: 900px;
+            margin: 100px auto 0;
+
+            text-align: center;
+        }
+
+        .products-bottom h2 {
+            font-size: 30px;
+            color: #31513b;
+
+            margin-bottom: 20px;
+        }
+
+        .products-bottom p {
+            font-size: 14px;
+            line-height: 1.9;
+            color: #777;
+        }
+
+
+        /* =========================
+           모바일
+        ========================== */
+
+        @media (max-width: 900px) {
+
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .products-page {
+                padding: 70px 5%;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .products-header h1 {
+                font-size: 32px;
+            }
+
+            .product-item-image {
+                height: 260px;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <a href="index.html" class="logo">
+    더바른한끼
+</a>
+
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="brand.html">브랜드 소개</a>
+            <a href="products.html">제품 소개</a>
+            <a href="company.html">한끼식품</a>
+            <a href="history.html">걸어온 길</a>
+            <a href="contact.html">문의하기</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         PRODUCTS
+    ========================== -->
+
+    <main class="products-page">
+
+
+        <!-- 페이지 제목 -->
+
+        <div class="products-header">
+
+            <p class="section-label">
+                OUR PRODUCTS
+            </p>
+
+            <h1>
+                더바른한끼의<br>
+                제품을 소개합니다
+            </h1>
+
+            <p>
+                오랜 시간 쌓아온 경험과 노하우를 바탕으로
+                정성스럽게 만들어온 소문난찐빵&손만두의
+                다양한 제품을 만나보세요.
+            </p>
+
+        </div>
+
+
+        <!-- 제품 9개 -->
+
+        <div class="product-grid">
+
+
+            <!-- 01 -->
+
+            <article class="product-item">
+
+                <div class="product-item-image">
+
+                    <img
+                        src="https://lh3.googleusercontent.com/wuvHDpNkgdpwgv1Hqe19HBk-lHvmx9w75PLTruwdGmP8m-vwnZ-mQkg9uyXiJJy3mSiVBwOIdmDywamBjpID1CD1l_HUrs8yuseZ7rAeU6Km-uPSL8qQ%3Dw800"
+                        alt="발효 왕찐빵">
+
+                </div>
+
+                <div class="product-item-content">
+
+                    <span class="product-number">
+                        PRODUCT 01
+                    </span>
+
+                    <h2>
+                        발효 왕찐빵
+                    </h2>
+
+                    <p>
+                        발효와 숙성을 통해 만들어지는 찐빵으로
+                        속은 앙금으로 가득차고, 겉피는 부드러워
+                        나이에 상관없이 누구나 즐겨찾는 발효왕찐빵
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 02 -->
+
+            <article class="product-item">
+
+                <div class="product-item-image">
+
+                    <img
+                        src="https://lh3.googleusercontent.com/Pdu5rRQQziIR469FEl3cTHciXnZQDRkNXtyKo2rYjR0Tv0oqM7sT9C7lRNFqlqmk4cyH2-mH-EpVm9WfAqdrNWy0o_qOLAQsatmWZLds9c3w7PP8ojkT6Q%3Dw800"
+                        alt="발효 고기 왕만두">
+
+                </div>
+
+                <div class="product-item-content">
+
+                    <span class="product-number">
+                        PRODUCT 02
+                    </span>
+
+                    <h2>
+                        발효 고기 왕만두
+                    </h2>
+
+                    <p>
+                        발효와 숙성을 통해 만들어지는 왕만두로
+                        입 안에서 가득차는 깊은 맛
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 03 -->
+
+            <article class="product-item">
+
+                <div class="product-item-image">
+
+                    <img
+                        src="https://lh3.googleusercontent.com/hgAZ20D4nd2HcLdrtMErFZdFmetr2Y1uioPfClJ5HbbjZAuwXoFaKS0yzr50c1bqE9JPO9E_diXbT9tfBD6-pVbqGdNisMf_cgmVD0XZg1lD7Wi2I1lN6BY%3Dw800"
+                        alt="수제 고기 왕만두">
+
+                </div>
+
+                <div class="product-item-content">
+
+                    <span class="product-number">
+                        PRODUCT 03
+                    </span>
+
+                    <h2>
+                        수제 고기 왕만두
+                    </h2>
+
+                    <p>
+                        돼지고기와 아삭한 무말랭이,
+                        쫄깃한 만두피가 만나
+                        입 안에서 꽉차는 조화로운 맛
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 04 -->
+
+            <article class="product-item">
+
+                <div class="product-item-image">
+
+                    <img
+                        src="https://lh3.googleusercontent.com/lqDxVVqUtdXwEX-eTZ8uNhJRKmgxk2yJ2-vFNQB6rIKYMleIavLLNQ4KzSSnEx04ftQulPuppm3kESyYQL48dCRDe37rJImkw0pvgLjRXn4TTwuuejJr%3Dw800"
+                        alt="수제 김치 왕만두">
+
+                </div>
+
+                <div class="product-item-content">
+
+                    <span class="product-number">
+                        PRODUCT 04
+                    </span>
+
+                    <h2>
+                        수제 김치 왕만두
+                    </h2>
+
+                    <p>
+                        돼지고기와 아삭한 김치,
+                        쫄깃한 만두피가 만나
+                        입 안에서 꽉차는 조화로운 맛
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 05 -->
+
+            <article class="product-item">
+
+                <div class="product-item-image">
+
+                    <img
+                        src="https://lh3.googleusercontent.com/ecr_2cdW-bqu6J-XslYBAMI-Db_q8IGt8PQKkhvi5aof7lsCXQJ9h-Lfa4YRU0IiJqyF6OLb-TJh3Vrh4k2h4sJTTevfc4HQO7jZA6OoP9VwJIQ-awCGQQ%3Dw800"
+                        alt="수제 고기만두">
+
+                </div>
+
+                <div class="product-item-content">
+
+                    <span class="product-number">
+                        PRODUCT 05
+                    </span>
+
+                    <h2>
+                        수제 고기만두
+                    </h2>
+
+                    <p>
+                        한 입에 들어가지만
+                        속은 꽉 채운 맛이 일품인 고기만두
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 06 -->
+
+            <article class="product-item">
+
+                <div class="product-item-image">
+
+                    <img
+                        src="https://lh3.googleusercontent.com/11UE79vJhHljO84Rg1hnVVk4ACtJ9bT5LWUIFJEePsJGd5R4KE_22A1fpjJ9CwXhXJMISkkjLaRLEXClWAfIPED5SkeduwCrJ8ByCeW9cMs8FXhk4X2Y%3Dw800"
+                        alt="수제 김치만두">
+
+                </div>
+
+                <div class="product-item-content">
+
+                    <span class="product-number">
+                        PRODUCT 06
+                    </span>
+
+                    <h2>
+                        수제 김치만두
+                    </h2>
+
+                    <p>
+                        한 입에 먹기 편하고 국내산 김치로 만들어
+                        신선한 맛과 돼지고기의 조화가 일품인
+                        김치만두
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 07 -->
+
+            <article class="product-item">
+
+                <div class="product-item-image">
+
+                    <img
+                        src="https://lh3.googleusercontent.com/ot0RtjTfPbpnN_QQv-gg7lyO5bKzdNdAep3x21xmR04sxvh7yij9g7D2_lUBdQSq0cjUJ8MN9pKs18TpuAvprm562dSv15KlB3TNcZBDMvrZLleBzTfO%3Dw800"
+                        alt="숯불 갈비만두">
+
+                </div>
+
+                <div class="product-item-content">
+
+                    <span class="product-number">
+                        PRODUCT 07
+                    </span>
+
+                    <h2>
+                        숯불 갈비만두
+                    </h2>
+
+                    <p>
+                        쫀득한 만두피와 달짝지근한 맛으로
+                        아이들이 좋아하는 맛입니다.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 08 -->
+
+            <article class="product-item">
+
+                <div class="product-item-image">
+
+                    <img
+                        src="https://lh3.googleusercontent.com/4ArP1hIoyxn4VThD-ZQ1Y2xEyMkhXmPSz9OzeRguVaGsLbYixKqELgOoVtWEdsdQBOrqgEmAyK7LGfNojBzddpB7vTB2D6xQFIr_OouHWftky1zGKttrgg%3Dw800"
+                        alt="호떡쌀 군만두">
+
+                </div>
+
+                <div class="product-item-content">
+
+                    <span class="product-number">
+                        PRODUCT 08
+                    </span>
+
+                    <h2>
+                        호떡쌀 군만두
+                    </h2>
+
+                    <p>
+                        겉은 바삭하고 속은 촉촉한
+                        호떡쌀 군만두
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 09 -->
+
+            <article class="product-item">
+
+                <div class="product-item-image">
+
+                    <img
+                        src="https://lh3.googleusercontent.com/kt_BT_xTcdddtCiiGnSBSJHQyIzK_56UOmADkehgABZrB8zy47yl-pRQleQ_tudR12XGkCL60qUUFnFEFUce6TC4l1f56Mbl_pJAbKAjbQgWDCWNAf3IZFY%3Dw800"
+                        alt="호떡쌀 김치 군만두">
+
+                </div>
+
+                <div class="product-item-content">
+
+                    <span class="product-number">
+                        PRODUCT 09
+                    </span>
+
+                    <h2>
+                        호떡쌀 김치 군만두
+                    </h2>
+
+                    <p>
+                        겉은 바삭하고 속은 촉촉한
+                        호떡쌀 김치 군만두
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- 하단 메시지 -->
+
+        <div class="products-bottom">
+
+            <h2>
+                더바른한끼가 만드는 한끼
+            </h2>
+
+            <p>
+                오랜 경험과 정성을 바탕으로
+                일상 속에서 편하게 즐길 수 있는
+                맛있는 제품을 만들어갑니다.
+            </p>
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>

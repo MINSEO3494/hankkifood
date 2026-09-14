@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>더바른한끼 | 문의하기</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================
+           문의 페이지
+        ========================== */
+
+        .contact-page {
+            background: #f8f6f0;
+        }
+
+
+        /* 상단 */
+
+        .contact-hero {
+            padding: 110px 10%;
+            text-align: center;
+
+            background: #e9e4d8;
+        }
+
+        .contact-hero h1 {
+            margin: 15px 0 20px;
+
+            font-size: 48px;
+            color: #31513b;
+        }
+
+        .contact-hero p:last-child {
+            color: #666;
+            line-height: 1.8;
+        }
+
+
+        /* 문의 내용 */
+
+        .contact-section {
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            padding: 100px 30px;
+        }
+
+
+        .contact-title {
+            margin-bottom: 50px;
+        }
+
+        .contact-title h2 {
+            margin-bottom: 15px;
+
+            font-size: 34px;
+            color: #31513b;
+        }
+
+        .contact-title p {
+            color: #777;
+            line-height: 1.8;
+        }
+
+
+        /* 연락처 카드 */
+
+        .contact-grid {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .contact-card {
+            padding: 40px;
+
+            background: #fff;
+
+            border: 1px solid #eee;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+        }
+
+
+        .contact-card-label {
+            margin-bottom: 15px;
+
+            font-size: 12px;
+            letter-spacing: 2px;
+
+            color: #8b6f47;
+        }
+
+
+        .contact-card h3 {
+            margin-bottom: 10px;
+
+            font-size: 22px;
+            color: #333;
+        }
+
+
+        .contact-card p {
+            margin: 0;
+
+            font-size: 15px;
+            line-height: 1.8;
+
+            color: #666;
+        }
+
+
+        /* 전화번호 강조 */
+
+        .phone-number {
+            font-size: 28px !important;
+
+            font-weight: 700;
+
+            color: #31513b !important;
+        }
+
+
+        /* 문의 안내 */
+
+        .contact-guide {
+            margin-top: 70px;
+
+            padding: 50px;
+
+            background: #31513b;
+
+            color: #fff;
+        }
+
+
+        .contact-guide h2 {
+            margin-bottom: 20px;
+
+            font-size: 30px;
+        }
+
+
+        .contact-guide p {
+            margin: 0;
+
+            color: #e5e5e5;
+
+            line-height: 2;
+        }
+
+
+        /* 하단 */
+
+        .contact-bottom {
+            padding: 90px 10%;
+
+            text-align: center;
+
+            background: #fff;
+        }
+
+
+        .contact-bottom h2 {
+            margin-bottom: 20px;
+
+            font-size: 32px;
+
+            color: #31513b;
+        }
+
+
+        .contact-bottom p {
+            color: #777;
+
+            line-height: 1.9;
+        }
+
+
+        /* 모바일 */
+
+        @media (max-width: 768px) {
+
+            .contact-hero {
+                padding: 80px 7%;
+            }
+
+            .contact-hero h1 {
+                font-size: 36px;
+            }
+
+
+            .contact-section {
+                padding: 70px 7%;
+            }
+
+
+            .contact-title h2 {
+                font-size: 29px;
+            }
+
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .contact-card {
+                padding: 30px;
+            }
+
+
+            .phone-number {
+                font-size: 24px !important;
+            }
+
+
+            .contact-guide {
+                padding: 35px 25px;
+            }
+
+
+            .contact-guide h2 {
+                font-size: 26px;
+            }
+
+
+            .contact-bottom {
+                padding: 70px 7%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <a href="index.html" class="logo">
+            더바른한끼
+        </a>
+
+
+        <nav>
+
+            <a href="brand.html">
+                브랜드 소개
+            </a>
+
+            <a href="products.html">
+                제품 소개
+            </a>
+
+            <a href="company.html">
+                한끼식품
+            </a>
+
+            <a href="history.html">
+                걸어온 길
+            </a>
+
+            <a href="contact.html">
+                문의하기
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main class="contact-page">
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="contact-hero">
+
+            <p class="section-label">
+                CONTACT
+            </p>
+
+            <h1>
+                문의하기
+            </h1>
+
+            <p>
+                제품 및 사업에 관한 문의사항을<br>
+                편하게 연락해주세요.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             연락처
+        ========================== -->
+
+        <section class="contact-section">
+
+
+            <div class="contact-title">
+
+                <p class="section-label">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    한끼식품과 이야기해보세요.
+                </h2>
+
+                <p>
+                    제품, 납품, 가맹 및 기타 문의사항은<br>
+                    아래 연락처를 통해 문의하실 수 있습니다.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+
+                <!-- 전화 -->
+
+                <div class="contact-card">
+
+                    <p class="contact-card-label">
+                        PHONE
+                    </p>
+
+                    <h3>
+                        대표전화
+                    </h3>
+
+                    <p class="phone-number">
+                        031) 544-4089
+                    </p>
+
+                </div>
+
+
+                <!-- 이메일 -->
+
+                <div class="contact-card">
+
+                    <p class="contact-card-label">
+                        E-MAIL
+                    </p>
+
+                    <h3>
+                        이메일
+                    </h3>
+
+                    <p>
+                        somun7979@naver.com
+                    </p>
+
+                </div>
+
+
+                <!-- 주소 -->
+
+                <div class="contact-card">
+
+                    <p class="contact-card-label">
+                        ADDRESS
+                    </p>
+
+                    <h3>
+                        회사 주소
+                    </h3>
+
+                    <p>
+                        경기도 포천시 소홀읍<br>
+                        호국로 778-7, 2층
+                    </p>
+
+                </div>
+
+
+                <!-- 문의 분야 -->
+
+                <div class="contact-card">
+
+                    <p class="contact-card-label">
+                        BUSINESS
+                    </p>
+
+                    <h3>
+                        문의 분야
+                    </h3>
+
+                    <p>
+                        제품 문의 · 납품 문의<br>
+                        가맹 문의 · 기타 사업 문의
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- 문의 안내 -->
+
+            <div class="contact-guide">
+
+                <h2>
+                    궁금한 점이 있으신가요?
+                </h2>
+
+                <p>
+                    제품 및 납품, 가맹점 운영 등<br>
+                    궁금하신 사항을 편하게 문의해주세요.<br>
+                    확인 후 안내드리겠습니다.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =========================
+             BOTTOM
+        ========================== -->
+
+        <section class="contact-bottom">
+
+            <p class="section-label">
+                HANKKI FNB
+            </p>
+
+            <h2>
+                더 좋은 한끼를 만들어갑니다.
+            </h2>
+
+            <p>
+                한끼식품은 오랜 경험과 노하우를 바탕으로<br>
+                고객에게 좋은 제품을 전달하기 위해 노력하겠습니다.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>

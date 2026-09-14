@@ -1,0 +1,681 @@
+/* =========================
+   기본 설정
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, "Noto Sans KR", sans-serif;
+    color: #333;
+    background-color: #f8f6f0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   공통 헤더
+========================= */
+
+header {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background-color: #fff;
+
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #31513b;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    font-size: 15px;
+}
+
+nav a {
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #31513b;
+}
+
+
+/* =========================
+   공통 버튼
+========================= */
+
+.hero-button,
+.product-button,
+.story-button {
+    display: inline-block;
+
+    padding: 14px 26px;
+
+    background-color: #31513b;
+    color: #fff;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.hero-button:hover,
+.product-button:hover,
+.story-button:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================
+   메인 HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+
+    padding: 80px 10%;
+
+    background-color: #e9e4d8;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-text > p:first-child {
+    font-size: 16px;
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.25;
+
+    color: #31513b;
+
+    margin-bottom: 25px;
+}
+
+.hero-text h1 span {
+    color: #8b6f47;
+}
+
+.hero-text .description {
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: #555;
+
+    margin-bottom: 35px;
+}
+
+.hero-image {
+    flex: 0 0 48%;
+    max-width: 650px;
+}
+
+.image-placeholder {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d8d2c3;
+
+    border-radius: 20px;
+
+    color: #777;
+}
+
+.image-placeholder span {
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.image-placeholder small {
+    font-size: 13px;
+}
+
+
+/* =========================
+   핵심 가치
+========================= */
+
+.values {
+    width: 100%;
+    min-height: 190px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    padding: 45px 8%;
+
+    background-color: #fff;
+}
+
+.value-item {
+    text-align: center;
+
+    padding: 0 30px;
+
+    border-right: 1px solid #e5e2da;
+}
+
+.value-item:last-child {
+    border-right: none;
+}
+
+.value-icon {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.value-item h3 {
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    font-size: 13px;
+    line-height: 1.7;
+
+    color: #777;
+}
+
+
+/* =========================
+   제품 소개
+========================= */
+
+.products {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 90px 7%;
+
+    background-color: #f8f6f0;
+}
+
+.products-intro {
+    flex: 0 0 280px;
+}
+
+.section-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    color: #888;
+
+    margin-bottom: 15px;
+}
+
+.products-intro h2 {
+    font-size: 30px;
+    line-height: 1.4;
+
+    margin-bottom: 18px;
+}
+
+.products-intro > p:not(.section-label) {
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+.product-list {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 12px;
+}
+
+.product-card {
+    overflow: hidden;
+
+    text-align: center;
+
+    padding-bottom: 18px;
+
+    background-color: #fff;
+
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 170px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ddd7c9;
+
+    color: #8b6f47;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-card h3 {
+    font-size: 15px;
+
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.product-card p {
+    font-size: 11px;
+
+    color: #888;
+}
+
+
+/* =========================
+   브랜드 스토리
+========================= */
+
+.brand-story {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+
+    padding: 110px 10%;
+
+    background-color: #fff;
+}
+
+.brand-story-image {
+    flex: 0 0 48%;
+}
+
+.brand-story-image .image-placeholder {
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    background-color: #e9e4d8;
+
+    border-radius: 16px;
+}
+
+.brand-story-text {
+    flex: 1;
+}
+
+.brand-story-text h2 {
+    font-size: 38px;
+    line-height: 1.4;
+
+    color: #31513b;
+
+    margin-bottom: 25px;
+}
+
+.brand-story-text p:not(.section-label) {
+    font-size: 15px;
+    line-height: 2;
+
+    color: #666;
+
+    margin-bottom: 15px;
+}
+
+.story-button {
+    margin-top: 15px;
+}
+
+
+/* =========================
+   회사 연혁
+========================= */
+
+.history {
+    width: 100%;
+
+    display: flex;
+
+    gap: 100px;
+
+    padding: 110px 10%;
+
+    background-color: #f8f6f0;
+}
+
+.history-title {
+    flex: 0 0 280px;
+
+    height: fit-content;
+
+    position: sticky;
+    top: 100px;
+}
+
+.history-title h2 {
+    font-size: 38px;
+    line-height: 1.4;
+
+    color: #31513b;
+
+    margin-bottom: 25px;
+}
+
+.history-title > p:not(.section-label) {
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #777;
+}
+
+.history-list {
+    flex: 1;
+
+    border-left: 1px solid #d8d2c3;
+}
+
+.history-item {
+    display: flex;
+
+    position: relative;
+
+    padding: 0 0 55px 40px;
+}
+
+.history-item:last-child {
+    padding-bottom: 0;
+}
+
+.history-year {
+    flex: 0 0 100px;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    color: #31513b;
+}
+
+.history-content {
+    padding-left: 20px;
+}
+
+.history-content h3 {
+    font-size: 20px;
+
+    color: #333;
+
+    margin-bottom: 15px;
+}
+
+.history-content p {
+    font-size: 14px;
+    line-height: 1.9;
+
+    color: #777;
+}
+
+.history-item::before {
+    content: "";
+
+    width: 11px;
+    height: 11px;
+
+    position: absolute;
+
+    left: -6px;
+    top: 5px;
+
+    background-color: #31513b;
+
+    border-radius: 50%;
+}
+
+
+/* =========================
+   모바일
+========================= */
+
+@media (max-width: 1000px) {
+
+    .products {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .products-intro {
+        flex: none;
+    }
+
+    .product-list {
+        width: 100%;
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        height: 70px;
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 700px;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding: 60px 7%;
+
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-text .description {
+        font-size: 15px;
+    }
+
+    .hero-image {
+        width: 80%;
+        max-width: 450px;
+    }
+
+    .values {
+        grid-template-columns: repeat(2, 1fr);
+
+        padding: 35px 5%;
+
+        row-gap: 35px;
+    }
+
+    .value-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .value-item:nth-child(3),
+    .value-item:nth-child(4) {
+        border-top: 1px solid #e5e2da;
+
+        padding-top: 30px;
+    }
+
+    .brand-story {
+        flex-direction: column;
+
+        padding: 70px 7%;
+    }
+
+    .brand-story-image {
+        width: 100%;
+    }
+
+    .brand-story-text h2 {
+        font-size: 30px;
+    }
+
+    .history {
+        flex-direction: column;
+
+        padding: 70px 7%;
+
+        gap: 50px;
+    }
+
+    .history-title {
+        position: static;
+    }
+
+    .history-title h2 {
+        font-size: 30px;
+    }
+
+    .history-item {
+        padding-left: 25px;
+    }
+
+    .history-year {
+        flex: 0 0 70px;
+
+        font-size: 22px;
+    }
+
+    .history-content {
+        padding-left: 10px;
+    }
+
+    .history-content h3 {
+        font-size: 17px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* =========================
+   상단 메뉴 마우스 오버 효과
+========================= */
+
+header nav a {
+    position: relative;
+
+    color: #333;
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* 마우스를 올렸을 때 글자 */
+
+header nav a:hover {
+    color: #31513b;
+    transform: translateY(-2px);
+}
+
+
+/* 아래쪽 선 */
+
+header nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #31513b;
+
+    transform: translateX(-50%);
+
+    transition: width 0.3s ease;
+}
+
+
+/* 마우스를 올리면 선이 펼쳐짐 */
+
+header nav a:hover::after {
+    width: 100%;
+}
