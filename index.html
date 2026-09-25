@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -5,426 +6,1383 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>더바른한끼 | 한끼식품</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>한끼식품 | 더바른한끼</title>
+
+    <meta name="description" content="한끼식품 | 더바른한끼 소문난찐빵&손만두">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 
 <body>
 
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
-    <!-- =========================
-         상단 메뉴
-    ========================== -->
+<header id="header">
 
-    <header>
+    <div class="header-inner">
 
-        <!-- 로고 클릭 시 메인 홈페이지로 이동 -->
-     <a href="index.html" class="logo">
-    <img src="images/logo.png" alt="더바른한끼 소문난찐빵&손만두">
+        <a href="#home" class="logo logo-color-change">
+    <img src="images/logo.png" alt="한끼식품">
+    <img src="images/logo.png" alt="" class="logo-white-text">
 </a>
 
-        <!-- 모든 페이지와 동일한 메뉴 -->
-        <nav>
-            <div class="dropdown">
-    <a href="brand.html">
-        브랜드 소개
-    </a>
-
-    <div class="dropdown-menu">
-        <a href="brand.html">브랜드 개요</a>
-        <a href="history.html">걸어온 길</a>
-    </div>
-</div>
-
-            <a href="products.html">
-                제품 소개
-            </a>
-
-            <a href="company.html">
-                한끼식품
-            </a>
-
-            <a href="contact.html">
-                문의하기
-            </a>
-
+        <nav class="desktop-nav">
+            <a href="#brand">브랜드</a>
+            <a href="#stores">가맹점</a>
+            <a href="#strength">경쟁력</a>
+            <a href="#startup">창업비용</a>
+            <a href="#products">제품소개</a>
+            <a href="#contact">가맹문의</a>
         </nav>
 
-    </header>
+        <a href="#contact" class="header-button">
+            가맹문의
+            <span>→</span>
+        </a>
+
+        <button class="mobile-button" id="mobileMenu" aria-label="메뉴">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
 
 
-    <!-- =========================
-         메인 화면
-    ========================== -->
-    <section class="hero">
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#brand">브랜드</a>
+        <a href="#stores">가맹점</a>
+        <a href="#strength">경쟁력</a>
+        <a href="#startup">창업비용</a>
+        <a href="#products">제품소개</a>
+        <a href="#reviews">고객후기</a>
+        <a href="#activity">한끼 소식</a>
+        <a href="#contact">가맹문의</a>
+    </nav>
 
-        <div class="hero-text">
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-image"></div>
+    <div class="hero-dark"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            한끼식품의 새로운 브랜드
+        </p>
+
+        <h1>
+            더 바르고,
+            <br>
+            <strong>더 맛있는 한끼</strong>
+        </h1>
+
+        <p class="hero-description">
+            20년 전통의 맛과 품질을 자랑하는
+            <br>
+            더바른한끼 소문난찐빵&amp;손만두
+        </p>
+
+        <a href="#brand" class="hero-button">
+            브랜드 알아보기
+            <span>→</span>
+        </a>
+
+    </div>
+
+    <div class="hero-number">
+        <span class="active">01</span>
+        <span>/</span>
+        <span>10</span>
+    </div>
+
+    <div class="scroll-guide">
+        <span>SCROLL</span>
+        <i>↓</i>
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BRAND
+===================================================== -->
+
+<section class="brand-slide" id="brand">
+
+    <div class="brand-logo-area">
+
+        <div class="brand-logo-box">
+
+           <div class="brand-logo logo-color-change">
+    <img src="images/logo.png" alt="한끼식품">
+    <img src="images/logo.png" alt="" class="logo-white-text">
+</div>
 
             <p>
-                한끼식품의 새로운 브랜드
+                더 바른 한끼를 만드는 사람들
             </p>
 
-
-            <h1>
-                더 바르고,<br>
-                <span>더 맛있는 한끼</span>
-            </h1>
-
-
-            <p class="description">
-                좋은 재료와 정직한 생산으로<br>
-                누구나 안심하고 먹을 수 있는 한끼를 만듭니다.
-            </p>
-
-
-            <a href="brand.html" class="hero-button">
-                브랜드 알아보기
-            </a>
-
-        </div>
-
-<div class="hero-image">
-
-    <div class="hero-slider">
-<div class="hero-controls">
-
-    <button class="hero-prev">‹</button>
-
-    <span class="hero-count">
-        <strong>01</strong> / 03
-    </span>
-
-    <button class="hero-next">›</button>
-
-</div>
-        <div class="hero-slide active">
-            <img src="images/main1.jpg" alt="더바른한끼">
-        </div>
-
-        <div class="hero-slide">
-            <img src="images/main2.jpg" alt="더바른한끼">
-        </div>
-
-        <div class="hero-slide">
-            <img src="images/main3.jpg" alt="더바른한끼">
         </div>
 
     </div>
 
-</div>
 
-    </section>
-<div class="hero-scroll">
-    <span>SCROLL TO EXPLORE</span>
-    <div class="scroll-line"></div>
-</div>
+    <div class="brand-story">
 
-    <!-- =========================
-         핵심 가치
-    ========================== -->
+        <span class="section-label">
+            BRAND STORY
+        </span>
 
-    <section class="values">
+        <h2>
+            한끼를 더 바르게,
+            <br>
+            <strong>더 맛있게</strong>
+        </h2>
 
+        <p>
+            더바른한끼는 20년 전통의
+            소문난찐빵&amp;손만두에서 시작된
+            새로운 브랜드입니다.
+        </p>
 
-        <div class="value-item">
+        <p>
+            품질 좋은 재료와 정직한 생산을
+            바탕으로 누구나 믿고 찾을 수 있는
+            한끼를 만들어갑니다.
+        </p>
 
-            <div class="value-icon">
-                🌱
-            </div>
-            <h3>
-                좋은 재료
-            </h3>
+    </div>
 
-            <p>
-                엄선한 재료를 사용해<br>
-                믿을 수 있는 제품을 만듭니다.
-            </p>
+</section>
 
-        </div>
 
 
-        <div class="value-item">
+<!-- =====================================================
+     STORES
+===================================================== -->
 
-            <div class="value-icon">
-                🥟
-            </div>
+<section class="stores section" id="stores">
 
-            <h3>
-                정직한 맛
-            </h3>
+    <div class="container">
 
-            <p>
-                오랜 경험과 노하우를 바탕으로<br>
-                한결같은 맛을 지켜갑니다.
-            </p>
+        <div class="section-heading">
 
-        </div>
+            <div>
 
-
-        <div class="value-item">
-
-            <div class="value-icon">
-                🏭
-            </div>
-
-            <h3>
-                직접 생산
-            </h3>
-
-            <p>
-                직접 생산하고 관리하며<br>
-                제품의 품질을 책임집니다.
-            </p>
-
-        </div>
-
-
-        <div class="value-item">
-
-            <div class="value-icon">
-                🤝
-            </div>
-
-            <h3>
-                함께 성장
-            </h3>
-
-            <p>
-                고객과 파트너가 함께 성장할 수 있는<br>
-                식품 브랜드를 만들어갑니다.
-            </p>
-
-        </div>
-
-
-    </section>
-
-
-    <!-- =========================
-         제품 미리보기
-    ========================== -->
-
-    <section class="products">
-
-
-        <div class="products-intro">
-
-            <p class="section-label">
-                OUR PRODUCTS
-            </p>
-
-
-            <h2>
-                더바른한끼의<br>
-                대표 제품
-            </h2>
-
-
-            <p>
-                오랜 시간 쌓아온 제조 노하우로<br>
-                정성스럽게 만든 제품을 소개합니다.
-            </p>
-
-
-            <a href="products.html" class="product-button">
-                전체 제품 보기
-            </a>
-
-        </div>
-
-
-        <div class="product-list">
-
-
-            <div class="product-card">
-
-                <div class="product-image">
-    <img src="images/찐빵사진파일명.jpg" alt="발효 왕찐빵">
-</div>
-
-                <h3>
-                    발효 왕찐빵
-                </h3>
-
-                <p>
-                    부드럽고 쫄깃한 왕찐빵
-                </p>
-
-            </div>
-
-
-            <div class="product-card">
-
-                <div class="product-image">
-    <img src="images/수제 고기 왕만두.jpg" alt="수제 고기 왕만두">
-</div>
-
-                <h3>
-                    수제 고기 왕만두
-                </h3>
-
-                <p>
-                    속을 가득 채운 수제 왕만두
-                </p>
-
-            </div>
-
-
-            <div class="product-card">
-
-                <div class="product-image">
-    <img src="images/숯불 갈비만두.jpg" alt="숯불 갈비만두">
-</div>
-
-                <h3>
-                    숯불 갈비만두
-                </h3>
-
-                <p>
-                    숯불향을 담은 갈비만두
-                </p>
-
-            </div>
-
-
-            <div class="product-card">
-
-                <div class="product-image">
-    <img src="images/호떡쌀 군만두.jpg" alt="호떡쌀 군만두">
-</div>
-
-                <h3>
-                    호떡쌀 군만두
-                </h3>
-
-                <p>
-                    바삭하고 고소한 군만두
-                </p>
-
-            </div>
-
-
-            <div class="product-card">
-
-                <div class="product-image">
-    <img src="images/더바른 한끼.jpg" alt="더바른한끼">
-</div>
-
-                <h3>
-                    납작이 군만두
-                </h3>
-
-                <p>
-                    한입에 쏙 납작이 군만두
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         브랜드 소개
-    ========================== -->
-
-    <section class="brand-story">
-
-
-        <div class="brand-story-image">
-
-            <div class="image-placeholder">
-
-                <span>
-                    BRAND IMAGE
+                <span class="section-label">
+                    OUR STORES
                 </span>
 
-                <small>
-                    브랜드 대표 사진이 들어갈 자리
-                </small>
+                <h2>
+                    함께 성장하는
+                    <br>
+                    <strong>더바른한끼 가맹점</strong>
+                </h2>
+
+            </div>
+
+            <p>
+                현재 운영 중인 가맹점을
+                소개합니다.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="auto-slider">
+
+        <div class="slider-track store-track">
+
+            <div class="store-card">
+                <div class="image-placeholder">STORE 01</div>
+                <h3>강남과일점</h3>
+                <p>서울 강남구</p>
+            </div>
+
+            <div class="store-card">
+                <div class="image-placeholder">STORE 02</div>
+                <h3>에픽버거점</h3>
+                <p>서울 강남구</p>
+            </div>
+
+            <div class="store-card">
+                <div class="image-placeholder">STORE 03</div>
+                <h3>과일부심점</h3>
+                <p>경기 광주시</p>
+            </div>
+
+            <div class="store-card">
+                <div class="image-placeholder">STORE 04</div>
+                <h3>고양점</h3>
+                <p>경기도 고양시</p>
+            </div>
+
+            <div class="store-card">
+                <div class="image-placeholder">STORE 05</div>
+                <h3>일산시장점</h3>
+                <p>경기도 고양시</p>
+            </div>
+
+            <div class="store-card">
+                <div class="image-placeholder">STORE 06</div>
+                <h3>암사점</h3>
+                <p>서울 강동구</p>
+            </div>
+
+            <div class="store-card">
+                <div class="image-placeholder">STORE 07</div>
+                <h3>판교점</h3>
+                <p>경기도 성남시</p>
+            </div>
+
+            <div class="store-card">
+                <div class="image-placeholder">STORE 08</div>
+                <h3>용문점</h3>
+                <p>경기도 양평군</p>
+            </div>
+
+            <div class="store-card">
+                <div class="image-placeholder">STORE 09</div>
+                <h3>고성점</h3>
+                <p>강원도 고성군</p>
+            </div>
+
+            <div class="store-card">
+                <div class="image-placeholder">STORE 10</div>
+                <h3>양평점</h3>
+                <p>경기도 양평군</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     STRENGTH
+===================================================== -->
+
+<section class="strength section" id="strength">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    OUR STRENGTH
+                </span>
+
+                <h2>
+                    우리가 선택받는
+                    <br>
+                    <strong>다섯 가지 이유</strong>
+                </h2>
 
             </div>
 
         </div>
 
 
-        <div class="brand-story-text">
+        <div class="strength-grid">
 
-            <p class="section-label">
-                BRAND STORY
-            </p>
+            <article class="strength-card">
+                <span>01</span>
+                <h3>검증된 맛</h3>
+                <p>
+                    오랜 시간 사랑받아온
+                    20년 전통의 맛과 노하우
+                </p>
+            </article>
 
+            <article class="strength-card">
+                <span>02</span>
+                <h3>직접 생산</h3>
+                <p>
+                    만두와 찐빵을 직접 생산하고
+                    안정적으로 배송합니다.
+                </p>
+            </article>
+
+            <article class="strength-card">
+                <span>03</span>
+                <h3>소자본 창업</h3>
+                <p>
+                    창업 비용에 대한
+                    본사 마진 부담을 낮췄습니다.
+                </p>
+            </article>
+
+            <article class="strength-card">
+                <span>04</span>
+                <h3>1인 운영</h3>
+                <p>
+                    효율적인 운영 시스템으로
+                    인건비 부담을 줄일 수 있습니다.
+                </p>
+            </article>
+
+            <article class="strength-card">
+                <span>05</span>
+                <h3>샵인샵 운영</h3>
+                <p>
+                    기존 매장과 함께 운영하는
+                    복합 매장 형태가 가능합니다.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     STARTUP COST
+===================================================== -->
+
+<section class="startup" id="startup">
+
+    <div class="container">
+
+        <!-- TITLE -->
+        <div class="section-heading startup-heading">
+
+            <span class="section-label">
+                FRANCHISE
+            </span>
 
             <h2>
-                한끼를 더 바르게
+                더바른한끼와 함께하는
+                <br>
+                <strong>새로운 창업</strong>
             </h2>
 
-
             <p>
-                더바른한끼는 오랜 시간 쌓아온
-                식품 제조 경험을 바탕으로 탄생한
-                한끼식품의 브랜드입니다.
+                소자본으로 시작할 수 있는 더바른한끼
+                <br>
+                창업비용에 대한 본사 마진은 0입니다.
             </p>
-
-
-            <p>
-                좋은 재료와 정직한 제조,
-                그리고 맛에 대한 꾸준한 고민으로
-                더 좋은 한끼를 만들어갑니다.
-            </p>
-
-
-            <a href="brand.html" class="story-button">
-                브랜드 소개
-            </a>
 
         </div>
 
 
-    </section>
+        <!-- MAIN MESSAGE -->
+        <div class="startup-main-message">
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
+            <span class="small-text">
+                START YOUR BUSINESS
+            </span>
 
-    const slides = document.querySelectorAll('.hero-slide');
-    const prevButton = document.querySelector('.hero-prev');
-    const nextButton = document.querySelector('.hero-next');
-    const currentNumber = document.querySelector('.hero-count strong');
+            <h3>
+                <strong>소자본 · 1인 운영 · 샵인샵</strong>
+                창업이 가능합니다.
+            </h3>
 
-    if (slides.length < 2) return;
+            <p>
+                더바른한끼는 창업비용에 대한 본사 마진을 0으로 하고,
+                <br>
+                기존 시설을 최대한 활용하여 합리적인 비용으로
+                창업할 수 있도록 지원합니다.
+            </p>
 
-    let currentSlide = 0;
+        </div>
 
-    function showSlide(index) {
 
-        slides[currentSlide].classList.remove('active');
+        <!-- FRANCHISE TYPE -->
+        <div class="startup-type">
 
-        currentSlide = (index + slides.length) % slides.length;
+            <div class="startup-type-item">
 
-        slides[currentSlide].classList.add('active');
+                <span>A안</span>
 
-        currentNumber.textContent =
-            String(currentSlide + 1).padStart(2, '0');
-    }
+                <h3>
+                    소문난 단독 가맹점
+                </h3>
 
-    nextButton.addEventListener('click', function () {
-        showSlide(currentSlide + 1);
-    });
+                <p>
+                    더바른한끼 브랜드를 중심으로
+                    독립적인 매장을 운영하는 형태입니다.
+                </p>
 
-    prevButton.addEventListener('click', function () {
-        showSlide(currentSlide - 1);
-    });
+            </div>
 
-    setInterval(function () {
-        showSlide(currentSlide + 1);
-    }, 4000);
 
-});
-</script>
+            <div class="startup-type-item">
+
+                <span>B안</span>
+
+                <h3>
+                    샵인샵 형태
+                </h3>
+
+                <p>
+                    기존 매장에 더바른한끼를 함께 운영하여
+                    추가적인 창업 부담을 줄일 수 있습니다.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FRANCHISE COST TABLE -->
+
+        <div class="startup-table-wrap">
+
+            <div class="startup-table-head">
+
+                <div>
+
+                    <span>FRANCHISE COST</span>
+
+                    <h3>
+                        창업비용 안내
+                    </h3>
+
+                </div>
+
+                <p>
+                    더바른한끼 공식 창업비용 기준
+                    <br>
+                    매장 크기 및 현장 조건에 따라 달라질 수 있습니다.
+                </p>
+
+            </div>
+
+
+            <div class="startup-table">
+
+                <!-- HEADER -->
+
+                <div class="startup-table-row startup-table-header">
+
+                    <div class="startup-cell category">
+                        구분
+                    </div>
+
+                    <div class="startup-cell description">
+                        항목
+                    </div>
+
+                    <div class="startup-cell amount">
+                        비용
+                    </div>
+
+                    <div class="startup-cell note">
+                        비고
+                    </div>
+
+                </div>
+
+
+                <!-- 01 -->
+
+                <div class="startup-table-row">
+
+                    <div class="startup-cell category">
+                        01
+                    </div>
+
+                    <div class="startup-cell description">
+                        교육비
+                    </div>
+
+                    <div class="startup-cell amount">
+                        무료
+                    </div>
+
+                    <div class="startup-cell note">
+                        점포 운영 및 서비스 교육
+                    </div>
+
+                </div>
+
+
+                <!-- 02 -->
+
+                <div class="startup-table-row">
+
+                    <div class="startup-cell category">
+                        02
+                    </div>
+
+                    <div class="startup-cell description">
+                        가맹비
+                    </div>
+
+                    <div class="startup-cell amount">
+                        무료
+                    </div>
+
+                    <div class="startup-cell note">
+                        브랜드 사용 및 상권 보호
+                    </div>
+
+                </div>
+
+
+                <!-- 03 -->
+
+                <div class="startup-table-row">
+
+                    <div class="startup-cell category">
+                        03
+                    </div>
+
+                    <div class="startup-cell description">
+                        인테리어
+                    </div>
+
+                    <div class="startup-cell amount">
+                        별도 협의
+                    </div>
+
+                    <div class="startup-cell note">
+                        최소 공사 · 기존 인테리어 최대 활용
+                    </div>
+
+                </div>
+
+
+                <!-- 04 -->
+
+                <div class="startup-table-row">
+
+                    <div class="startup-cell category">
+                        04
+                    </div>
+
+                    <div class="startup-cell description">
+                        보일러
+                    </div>
+
+                    <div class="startup-cell amount">
+                        별도 협의
+                    </div>
+
+                    <div class="startup-cell note">
+                        스팀보일러 · 전기 · 가스 · 석유
+                    </div>
+
+                </div>
+
+
+                <!-- 05 -->
+
+                <div class="startup-table-row">
+
+                    <div class="startup-cell category">
+                        05
+                    </div>
+
+                    <div class="startup-cell description">
+                        어닝
+                    </div>
+
+                    <div class="startup-cell amount">
+                        60만원
+                    </div>
+
+                    <div class="startup-cell note">
+                        전면 5m 기준
+                    </div>
+
+                </div>
+
+
+                <!-- 06 -->
+
+                <div class="startup-table-row">
+
+                    <div class="startup-cell category">
+                        06
+                    </div>
+
+                    <div class="startup-cell description">
+                        간판 및 사인물
+                    </div>
+
+                    <div class="startup-cell amount">
+                        190만원
+                    </div>
+
+                    <div class="startup-cell note">
+                        간판 신규 제작 · 내부 사인물
+                    </div>
+
+                </div>
+
+
+                <!-- 07 -->
+
+                <div class="startup-table-row">
+
+                    <div class="startup-cell category">
+                        07
+                    </div>
+
+                    <div class="startup-cell description">
+                        냉동고 및 주방설비
+                    </div>
+
+                    <div class="startup-cell amount">
+                        60만원
+                    </div>
+
+                    <div class="startup-cell note">
+                        기존 설비 사용 가능
+                    </div>
+
+                </div>
+
+
+                <!-- 08 -->
+
+                <div class="startup-table-row">
+
+                    <div class="startup-cell category">
+                        08
+                    </div>
+
+                    <div class="startup-cell description">
+                        찜기
+                    </div>
+
+                    <div class="startup-cell amount">
+                        80만원
+                    </div>
+
+                    <div class="startup-cell note">
+                        3구 찜기
+                    </div>
+
+                </div>
+
+
+                <!-- TOTAL -->
+
+                <div class="startup-table-row startup-table-total">
+
+                    <div class="startup-cell category">
+                        TOTAL
+                    </div>
+
+                    <div class="startup-cell description">
+                        총 창업비용
+                    </div>
+
+                    <div class="startup-cell amount">
+                        약 1,000만원
+                    </div>
+
+                    <div class="startup-cell note">
+                        매장 크기에 따라 상이
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOTICE -->
+
+            <div class="startup-table-notice">
+
+                <strong>
+                    ※ 창업비용 안내
+                </strong>
+
+                <span></span>
+
+                <p>
+                    더바른한끼는 창업비용에 대한 본사 마진을 0으로 운영합니다.
+                    인테리어 및 일부 설비 비용은 매장 규모와 현장 조건에 따라
+                    달라질 수 있으며, 기존 시설을 활용할 수 있습니다.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- STARTUP PROCESS -->
+
+        <div class="startup-process">
+
+            <div class="startup-process-title">
+
+                <span>
+                    PROCESS
+                </span>
+
+                <h3>
+                    창업 진행 절차
+                </h3>
+
+            </div>
+
+
+            <div class="startup-process-list">
+
+                <div class="startup-process-item">
+
+                    <b>01</b>
+
+                    <div>
+                        <strong>상담신청</strong>
+
+                        <p>
+                            창업 상담 및 기본 안내
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="startup-process-item">
+
+                    <b>02</b>
+
+                    <div>
+                        <strong>입지검토</strong>
+
+                        <p>
+                            매장 위치 및 상권 검토
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="startup-process-item">
+
+                    <b>03</b>
+
+                    <div>
+                        <strong>가맹계약</strong>
+
+                        <p>
+                            계약 조건 및 일정 협의
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="startup-process-item">
+
+                    <b>04</b>
+
+                    <div>
+                        <strong>매장준비</strong>
+
+                        <p>
+                            인테리어 및 시설 준비
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="startup-process-item">
+
+                    <b>05</b>
+
+                    <div>
+                        <strong>교육 / 오픈</strong>
+
+                        <p>
+                            운영교육 및 오픈 지원
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="startup-process-item">
+
+                    <b>06</b>
+
+                    <div>
+                        <strong>GRAND OPEN</strong>
+
+                        <p>
+                            성공적인 매장 오픈
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BUTTON -->
+
+        <a href="#contact" class="startup-button">
+
+            창업 상담 문의
+
+            <span>→</span>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     CEO
+===================================================== -->
+
+<section class="ceo section" id="ceo">
+
+    <div class="ceo-image">
+
+        <div class="image-placeholder ceo-photo-wrap">
+            <img src="images/about.jpg" alt="한끼식품 대표" class="ceo-photo">
+        </div>
+
+    </div>
+
+
+    <div class="ceo-content">
+
+        <span class="section-label">
+            CEO MESSAGE
+        </span>
+
+        <h2>
+            좋은 재료와
+            <br>
+            <strong>정직한 마음</strong>
+        </h2>
+
+        <p>
+            어린 시절 아버지가 퇴근하며 사 오시던
+            따끈한 찐빵과 손만두의 맛.
+        </p>
+
+        <p>
+            그 따뜻했던 기억을 바탕으로
+            품질 좋은 재료와 부담 없는 가격으로
+            고객에게 추억의 맛을 전하고자 합니다.
+        </p>
+
+        <p>
+            정직함을 잃지 않고,
+            한끼 한끼 정성을 다해
+            더 바르게 만들어가겠습니다.
+        </p>
+
+        <strong class="ceo-name">
+            한끼식품 대표
+        </strong>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     PRODUCTS
+===================================================== -->
+
+<section class="products section" id="products">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    OUR PRODUCTS
+                </span>
+
+                <h2>
+                    더바른한끼의
+                    <br>
+                    <strong>맛있는 제품</strong>
+                </h2>
+
+            </div>
+
+            <p>
+                정성스럽게 만들어낸
+                제품들을 만나보세요.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="auto-slider">
+
+        <div class="slider-track product-track">
+
+            <!-- 01 왕찐빵 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/product1.jpg"
+                         alt="왕찐빵">
+                </div>
+
+                <div class="product-info">
+                    <span>01</span>
+                    <h3>왕찐빵</h3>
+                    <p>부드러운 피와 풍성한 앙금이 어우러진 왕찐빵</p>
+                </div>
+
+            </article>
+
+
+            <!-- 02 옥수수찐빵 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/product2.jpg"
+                         alt="옥수수찐빵">
+                </div>
+
+                <div class="product-info">
+                    <span>02</span>
+                    <h3>옥수수찐빵</h3>
+                    <p>옥수수의 고소하고 달콤한 풍미를 담은 찐빵</p>
+                </div>
+
+            </article>
+
+
+            <!-- 03 발효 고기왕만두 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/product3.jpg"
+                         alt="발효 고기왕만두">
+                </div>
+
+                <div class="product-info">
+                    <span>03</span>
+                    <h3>발효 고기왕만두</h3>
+                    <p>정성스럽게 발효한 만두피와 풍성한 고기소</p>
+                </div>
+
+            </article>
+
+
+            <!-- 04 발효 김치왕만두 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/product4.jpg"
+                         alt="발효 김치왕만두">
+                </div>
+
+                <div class="product-info">
+                    <span>04</span>
+                    <h3>발효 김치왕만두</h3>
+                    <p>깊은 풍미의 김치소를 담은 발효 왕만두</p>
+                </div>
+
+            </article>
+
+
+            <!-- 05 수제 고기 왕만두 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/product5.jpg"
+                         alt="수제 고기 왕만두">
+                </div>
+
+                <div class="product-info">
+                    <span>05</span>
+                    <h3>수제 고기 왕만두</h3>
+                    <p>풍성한 고기소를 정성껏 빚어낸 수제 왕만두</p>
+                </div>
+
+            </article>
+
+
+            <!-- 06 수제 김치 왕만두 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/product6.jpg"
+                         alt="수제 김치 왕만두">
+                </div>
+
+                <div class="product-info">
+                    <span>06</span>
+                    <h3>수제 김치 왕만두</h3>
+                    <p>매콤하고 깔끔한 김치소를 담은 수제 왕만두</p>
+                </div>
+
+            </article>
+
+
+            <!-- 07 숯불 갈비만두 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/product7.jpg"
+                         alt="숯불 갈비만두">
+                </div>
+
+                <div class="product-info">
+                    <span>07</span>
+                    <h3>숯불 갈비만두</h3>
+                    <p>숯불 갈비의 깊고 달콤한 풍미를 담은 만두</p>
+                </div>
+
+            </article>
+
+
+            <!-- 08 고기만두 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/product8.jpg"
+                         alt="고기만두">
+                </div>
+
+                <div class="product-info">
+                    <span>08</span>
+                    <h3>고기만두</h3>
+                    <p>담백하고 풍성한 고기소로 가득 채운 만두</p>
+                </div>
+
+            </article>
+
+
+            <!-- 09 김치만두 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/product9.jpg"
+                         alt="김치만두">
+                </div>
+
+                <div class="product-info">
+                    <span>09</span>
+                    <h3>김치만두</h3>
+                    <p>깔끔하고 매콤한 맛이 조화로운 김치만두</p>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     REVIEWS
+===================================================== -->
+
+<section class="reviews section" id="reviews">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    CUSTOMER REVIEW
+                </span>
+
+                <h2>
+                    고객이 직접 남긴
+                    <br>
+                    <strong>생생한 이야기</strong>
+                </h2>
+
+            </div>
+
+            <p>
+                실제 고객 후기 이미지를
+                한곳에서 만나보세요.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="auto-slider">
+
+        <div class="slider-track review-track">
+
+            <div class="review-card">
+                <img src="images/review1.png" alt="고객 리뷰">
+            </div>
+
+            <div class="review-card">
+                <img src="images/review2.png" alt="고객 리뷰">
+            </div>
+
+            <div class="review-card">
+                <img src="images/review3.png" alt="고객 리뷰">
+            </div>
+
+            <div class="review-card">
+                <img src="images/review4.png" alt="고객 리뷰">
+            </div>
+
+            <div class="review-card">
+                <img src="images/review5.png" alt="고객 리뷰">
+            </div>
+
+            <div class="review-card">
+                <img src="images/review6.png" alt="고객 리뷰">
+            </div>
+
+            <div class="review-card">
+                <img src="images/review7.png" alt="고객 리뷰">
+            </div>
+
+            <div class="review-card">
+                <img src="images/review8.png" alt="고객 리뷰">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ACTIVITY
+===================================================== -->
+
+<section class="activity section" id="activity">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span class="section-label">
+                HANKKI NEWS
+            </span>
+
+            <h2>
+                함께 만들어가는
+                <br>
+                <strong>한끼식품의 오늘</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="activity-grid">
+
+            <div class="activity-image">
+                <div class="image-placeholder">ACTIVITY 01</div>
+            </div>
+
+            <div class="activity-image">
+                <div class="image-placeholder">ACTIVITY 02</div>
+            </div>
+
+            <div class="activity-image">
+                <div class="image-placeholder">ACTIVITY 03</div>
+            </div>
+
+            <div class="activity-image">
+                <div class="image-placeholder">ACTIVITY 04</div>
+            </div>
+
+            <div class="activity-image">
+                <div class="image-placeholder">ACTIVITY 05</div>
+            </div>
+
+            <div class="activity-image">
+                <div class="image-placeholder">ACTIVITY 06</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact section" id="contact">
+
+    <div class="contact-inner">
+
+        <div class="contact-title">
+
+            <span class="section-label">
+                FRANCHISE CONTACT
+            </span>
+
+            <h2>
+                새로운 시작,
+                <br>
+                <strong>더바른한끼와 함께</strong>
+            </h2>
+
+            <p>
+                창업에 대해 궁금한 점이 있다면
+                언제든지 편하게 문의해주세요.
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-row">
+                <span>전화 문의</span>
+                <strong>031-544-4089</strong>
+            </div>
+
+            <div class="contact-row">
+                <span>상담 안내</span>
+                <strong>체인점 창업 상담</strong>
+            </div>
+
+            <div class="contact-row">
+                <span>ADDRESS</span>
+                <strong>
+                    경기도 포천시 소홀읍
+                    호국로 778-7, 2층
+                </strong>
+            </div>
+
+            <a href="tel:0315444089" class="contact-button">
+                전화로 상담하기
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <a href="#home" class="footer-logo">
+
+            <img
+                src="images/logo.png"
+                alt="한끼식품"
+            >
+
+        </a>
+
+
+        <div class="footer-info">
+
+            <span>한끼F&amp;B</span>
+
+            <span>
+                경기도 포천시 소홀읍 호국로 778-7, 2층
+            </span>
+
+            <span>
+                체인점 문의 031-544-4089
+            </span>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 HANKKI FOOD.
+            ALL RIGHTS RESERVED.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<button id="topButton" aria-label="맨 위로">
+    ↑
+</button>
+
+
+
+<script src="js/main.js"></script>
+
+
+
+<!-- REVIEW LIGHTBOX -->
+
+<div class="review-lightbox" id="reviewLightbox">
+
+    <button
+        class="review-lightbox-close"
+        id="reviewLightboxClose"
+        type="button"
+    >
+        ×
+    </button>
+
+    <img
+        id="reviewLightboxImage"
+        src=""
+        alt="고객 리뷰 확대 이미지"
+    >
+
+</div>
+
+
 </body>
-
 </html>
+```
